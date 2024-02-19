@@ -1,0 +1,39 @@
+* {
+  font-family: 'Pixelify Sans', sans-serif;
+  box-sizing: border-box;
+  font-weight: lighter;
+}
+
+body {
+  background-color: #f6f8fc;
+}
+
+h1 {
+  text-align: center;
+}
+
+.pokemons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .pokemons {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .pokemons {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pokemons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
